@@ -1,8 +1,5 @@
-const express = require('express')
-const app = express()
- 
-app.get('/', function (req, res) {
-  res.send('Hello Worldddd')
-})
- 
+const app = require('./src/app');
+
 app.listen(3000)
+
+
