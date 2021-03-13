@@ -3,10 +3,11 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res)=> {
-    res.send({
-        API: "Teste Node.js", 
-        Descrição:"Feita para estudo."
-    })
+    pessoa = {
+        nome: 'Gabriel',
+        idade: 20,
+    }
+    res.send(pessoa)
 });
 
 module.exports = router;
